@@ -1,11 +1,18 @@
 package com.bridgelabz;
 
 public class AddressBook {
-
-	public static void main(String[] args) {
 		
 		Contacts person = new Contacts();
-		person.getPersonDetails();
+		
+		public void getContact(){
+			
+	        person.getPersonDetails();
+
+	    }
+
+		@Override
+		public String toString() {
+			return "AddressBook [person=" + person + "]";
+		}
 		
 	}
-}

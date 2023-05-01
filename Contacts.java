@@ -1,5 +1,7 @@
 package com.bridgelabz;
 
+import java.util.Scanner;
+
 public class Contacts {
 
 	public String firstname, lastname, address, city, state, email;
@@ -105,6 +107,13 @@ public class Contacts {
 		zipcode = sc.nextInt();
 		System.out.println("Enter Phone number: ");
 		phoneNumber = sc.nextLong();
+	}
+
+	@Override
+	public String toString() {
+		return "Contacts [firstname=" + firstname + ", lastname=" + lastname + ", address=" + address + ", city=" + city
+				+ ", state=" + state + ", email=" + email + ", zipcode=" + zipcode + ", phoneNumber=" + phoneNumber
+				+ "]";
 	}
 	
 }
